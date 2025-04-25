@@ -15,24 +15,12 @@ An AI-powered research assistant that automatically searches, analyzes, and synt
 | **Scraping** | BeautifulSoup | Extracts clean text from pages |
 | **Reporting** | Markdown | Generates structured outputs |
 
-
-### Key Visual Elements:
-1. **Dynamic Badges** - Shows project status at a glance
-2. **Syntax Highlighting** - For code examples
-3. **Table Layout** - Organizes features cleanly
-4. **Mermaid Diagram** - Visualizes the architecture
-5. **Consistent Icons** - 🔍🤖✨🚀 etc. for scannability
-
-### How to Use:
-1. Copy this Markdown
-2. Replace all placeholders (your-username, API links, etc.)
-3. Add your demo GIF (recommended size: 800x450)
-4. Commit as `README.md`
-
-For additional polish:
-- Add a `docs/` folder with supplementary files
-- Include screenshots in an `assets/` folder
-- Add a "Powered By" section with Gemini/SerpAPI logos
+graph TD
+    A[User Query] --> B(SerpAPI Search)
+    B --> C[Scrape Content]
+    C --> D(Gemini Analysis)
+    D --> E[Generate Report]
+    E --> F((Output))
 
 ```python
 # Example usage
